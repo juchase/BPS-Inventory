@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok</title>
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- sidebar -->
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex hamburger">
+                <button class="toggle-btn" type="button">
+                    <i class="bx bx-menu"></i>
+                    <span class="menu">.</span>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">BPS Inventory</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link">
+                        <i class="bx bx-tachometer"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-box"></i>
+                        <span>Stok</span>
+                    </a>
+                </li>
+                <li class="sidebar-item"></li>
+                <a href="#" class="sidebar-link">
+                    <i class="bx bx-time-five"></i>
+                    <span>History</span>
+                </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#users" aria-expanded="false" aria-controls="users">
+                        <i class="bx bx-group"></i>
+                        <span>users</span>
+                    </a>
+                    <ul id="users" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Admin</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Pegawai</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#laporan" aria-expanded="false" aria-controls="laporan">
+                        <i class="bx bx-detail"></i>
+                        <span>Laporan</span>
+                    </a>
+                    <ul id="laporan" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Barang masuk</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Barang keluar</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="sidebar-footer">
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-log-out"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+        </aside>
+
+        <!-- navbar -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+
+                </form>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="/bx-user-circle.svg" class="avatar img-fluid" alt="akun">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+                                <p>NAMA USER</p>
+                                <ul>
+                                    <li><a href="#">profile</a></li>
+                                    <li><a href="#">Edit profile</a></li>
+                                    <li><a href="#">Ganti foto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- dashboard content -->
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3">Stok</h3>
+
+                        <!-- tabel -->
+                        <h3 class="fw-bold fs-4 my-3">Barang yang paling banyak diambil</h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr class="highlight">
+                                            <th scope="col">No</th>
+                                            <th scope="col">Barang</th>
+                                            <th scope="col">Stok</th>
+                                            <th scope="col">Diambil</th>
+                                            <th scope="col">sisa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Kertas A4</td>
+                                            <td>11</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Tinta hitam</td>
+                                            <td>15</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Pensil</td>
+                                            <td>22</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- chart js -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js
+    "></script>
+
+    <script src="doughnut.js"></script>
+
+    <!-- my js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
